@@ -49,7 +49,7 @@ int main(void)
     while (1)
     {  
         app_mqttScheduler();
-//        readAdcValue();
+        readAdcValue();
 //        DELAY_milliseconds(1000);
     }
     
