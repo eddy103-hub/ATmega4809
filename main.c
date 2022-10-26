@@ -31,14 +31,6 @@
     Main application
 */
 
-
-uint16 lightSensor = 0;
-void readAdcValue(void) {
-    lightSensor = ADC0_GetConversion(0);
-    printf( "Ambient = %d\n\r",lightSensor);
-
-
-}
 int main(void)
 {
     /* Initializes MCU, drivers and middleware */
@@ -49,8 +41,6 @@ int main(void)
     while (1)
     {  
         app_mqttScheduler();
-        readAdcValue();
-//        DELAY_milliseconds(1000);
     }
     
 }
